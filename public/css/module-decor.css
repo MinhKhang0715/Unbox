@@ -1,0 +1,19 @@
+.color-bar {
+    background: #E1A01E;
+    height: 10px;
+}
+
+.header-logo {
+    width: 72px;
+    height: 60px;
+    padding: 10px;
+}
+
+@media (max-width: 767px) {
+    .header-logo {
+        width: 48px;
+        height: 40px;
+        padding: 5px;
+        margin-left: calc(50% - 29px);
+    }
+}

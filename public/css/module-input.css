@@ -1,0 +1,38 @@
+input[type="text"] {
+    padding: 9px;
+    width: 80%;
+    height: 20px;
+    border: 1px solid black;
+}
+
+button {
+    padding: 9px 11px;
+    min-width: 20px;
+    min-height: 20px;
+}
+
+.button-primary {
+    border: 0;
+    background-color: #E1A01E;
+}
+
+.button-secondary {
+    border: 0;
+    background-color: #640FAA;
+}
+.button-secondary * {
+    color: white;
+}
+
+.button-black {
+    border: 0;
+    background-color: black;
+}
+.button-black * {
+    color: white;
+}
+
+.button-white {
+    border: 1px solid black;
+    background-color: white;
+}

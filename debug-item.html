@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <Title>Unbox Official - Debug item</Title>
+
+        <meta lang="en">
+        <meta charset="utf-8">
+        
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+        <link rel="stylesheet" type="text/css" href="./public/css/debug.css">
+
+        <link rel="stylesheet" type="text/css" href="./public/css/base-reset.css">
+        <link rel="stylesheet" type="text/css" href="./public/css/layout-container.css">
+        <link rel="stylesheet" type="text/css" href="./public/css/layout-item.css">
+    </head>
+    <body>
+
+        <h1>UNBOX OFFICIAL - DEBUG ITEM</h1>
+
+        <br>
+        <hr>
+        <br>
+
+        <h2>Lớp .container</h2>
+            <p>
+                Lớp <i>.container</i> sẽ thay đổi chiều ngang, tùy theo kích thước cửa sổ, và sẽ luôn được canh giữa.<br>
+                Trên cửa sổ <b>767px trở xuống</b>: 100vw<br>
+                Trên cửa sổ <b>từ 768px đến 1199px</b>: 720px<br>
+                Trên cửa sổ <b>từ 1200px trở lên</b>: 1140px<br>
+            </p>
+        <div class="container" style="background: silver">
+            <div class="group">
+                <span>Lớp .container</span>
+            </div>
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+        <h2>Lớp .item</h2>
+        <span>Lớp <b>.container</b> sẽ bị chia thành 12 cột bằng nhau với margin 2 bên là 15px như dưới:</span>
+        <div class="container">
+            <div class="group">
+                <div class="item l-1 m-1 s-1" style="height: 100px"></div>
+                <div class="item l-1 m-1 s-1" style="height: 100px"></div>
+                <div class="item l-1 m-1 s-1" style="height: 100px"></div>
+                <div class="item l-1 m-1 s-1" style="height: 100px"></div>
+                <div class="item l-1 m-1 s-1" style="height: 100px"></div>
+                <div class="item l-1 m-1 s-1" style="height: 100px"></div>
+                <div class="item l-1 m-1 s-1" style="height: 100px"></div>
+                <div class="item l-1 m-1 s-1" style="height: 100px"></div>
+                <div class="item l-1 m-1 s-1" style="height: 100px"></div>
+                <div class="item l-1 m-1 s-1" style="height: 100px"></div>
+                <div class="item l-1 m-1 s-1" style="height: 100px"></div>
+                <div class="item l-1 m-1 s-1" style="height: 100px"></div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <p>
+            Để sử dụng bố cục 12 cột của <i>.container</i>, các element bên trong phải thuộc lớp <i>.item</i>, sau đó dùng các lớp có tên theo công thức sau để xác định chiều dài:<br>
+            <b>S</b>-<b>R</b><br> với<br>
+            <b>S</b>: kích thước cửa sổ theo dạng viết tắt: l, m hoặc s<br>
+            <b>R</b>: số cột chiếm trong kích thước cửa sổ đó<br>
+        </p>
+        <div class="container">
+            <div class="group">
+                <div class="item l-2 m-5 s-4">
+                    <b>.item .l-2 .m-6 .s-12</b>
+                </div>
+                <div class="item l-8 m-2 s-4">
+                        <b>.item .l-2 .m-6 .s-12</b>
+                </div>
+                <div class="item l-2 m-5 s-4">
+                        <b>.item .l-2 .m-6 .s-12</b>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <p>
+            Nếu không dùng class .item, các element sẽ chỉ được xác định chiều dài và chiếm cả hàng đó
+        </p>
+
+        <div class="container">
+            <div class="group">
+                <div class="l-2 m-6 s-10" style="background: silver">
+                    l-2 m-6 s-10
+                </div>
+                <div class="l-2 m-6 s-10" style="background: whitesmoke">
+                    l-2 m-6 s-10
+                </div>
+                <div class="l-2 m-6 s-10" style="background: silver">
+                    l-2 m-6 s-10
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <p>Dùng quá số cột sẽ làm các element tràn xuống dòng dưới</p>
+        <div class="container">
+            <div class="group">
+                <div class="item l-2 m-6 s-12" style="height: 100px">
+                    .item .l-2 .m-6 .s-12                </div>
+                <div class="item l-8 m-6 s-12" style="height: 100px">
+                    .item .l-8 .m-6 .s-12
+                </div>
+                <div class="item l-2 m-6 s-12" style="height: 100px">
+                    .item .l-2 .m-6 .s-12
+                </div>
+                <div class="item l-9 m-9 s-9" style="height: 100px">
+                    .item .l-9 .m-9 .s-9
+                </div>
+                <div class="item l-4 m-4 s-4" style="height: 100px">
+                    .item .l-4 .m-4 .s-4
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <p>
+            Dùng hidden để  không hiển thị element
+        </p>
+        <div class="container">
+            <div class="group">
+                <div class="item l-8 m-6 s-hidden">
+                    <b>item l-8 m-6 s-hidden</b><br>
+                    Ở kích thước <i>l</i>, div này sẽ chiếm 8 cột<br>
+                    Ở kích thước <i>m</i>, div này sẽ chiếm 6 cột<br>
+                    Ở kích thước <i>s</i>, div này sẽ biến mất<br>
+                </div>
+                <div class="item l-8 m-6 s-hidden">
+                    <b>item l-8 m-6 s-hidden</b><br>
+                    Ở kích thước <i>l</i>, div này sẽ chiếm 8 cột<br>
+                    Ở kích thước <i>m</i>, div này sẽ chiếm 6 cột<br>
+                    Ở kích thước <i>s</i>, div này sẽ biến mất<br>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <hr>
+        <br>
+
+    </body>
+</html>

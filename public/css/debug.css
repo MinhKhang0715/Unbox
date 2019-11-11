@@ -1,0 +1,7 @@
+.item:nth-child(even) {
+    background: silver;
+}
+
+.item:nth-child(odd) {
+    background: whitesmoke;
+}

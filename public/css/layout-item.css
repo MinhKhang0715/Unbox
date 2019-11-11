@@ -1,0 +1,68 @@
+.group {
+    width: 100%;
+    height: fit-content;
+}
+
+.group:after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.item {
+    float: left;
+
+    margin-left: 15px;
+    margin-right: 15px;
+
+    height: fit-content;
+    max-height: 100%;
+}
+
+@media (max-width: 767px) {
+    .s-hidden { display: none; }
+    .s-1  { width: calc(100% / 12 * 1  - 30px); }
+    .s-2  { width: calc(100% / 12 * 2  - 30px); }
+    .s-3  { width: calc(100% / 12 * 3  - 30px); }
+    .s-4  { width: calc(100% / 12 * 4  - 30px); }
+    .s-5  { width: calc(100% / 12 * 5  - 30px); }
+    .s-6  { width: calc(100% / 12 * 6  - 30px); }
+    .s-7  { width: calc(100% / 12 * 7  - 30px); }
+    .s-8  { width: calc(100% / 12 * 8  - 30px); }
+    .s-9  { width: calc(100% / 12 * 9  - 30px); }
+    .s-10 { width: calc(100% / 12 * 10 - 30px); }
+    .s-11 { width: calc(100% / 12 * 11 - 30px); }
+    .s-12 { width: calc(100% / 12 * 12 - 30px); }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .m-hidden { display: none; }
+    .m-1  { width: calc(100% / 12 * 1  - 30px); }
+    .m-2  { width: calc(100% / 12 * 2  - 30px); }
+    .m-3  { width: calc(100% / 12 * 3  - 30px); }
+    .m-4  { width: calc(100% / 12 * 4  - 30px); }
+    .m-5  { width: calc(100% / 12 * 5  - 30px); }
+    .m-6  { width: calc(100% / 12 * 6  - 30px); }
+    .m-7  { width: calc(100% / 12 * 7  - 30px); }
+    .m-8  { width: calc(100% / 12 * 8  - 30px); }
+    .m-9  { width: calc(100% / 12 * 9  - 30px); }
+    .m-10 { width: calc(100% / 12 * 10 - 30px); }
+    .m-11 { width: calc(100% / 12 * 11 - 30px); }
+    .m-12 { width: calc(100% / 12 * 12 - 30px); }
+}
+
+@media (min-width: 1200px) {
+    .l-hidden { display: none; }
+    .l-1  { width: calc(100% / 12 * 1  - 30px); }
+    .l-2  { width: calc(100% / 12 * 2  - 30px); }
+    .l-3  { width: calc(100% / 12 * 3  - 30px); }
+    .l-4  { width: calc(100% / 12 * 4  - 30px); }
+    .l-5  { width: calc(100% / 12 * 5  - 30px); }
+    .l-6  { width: calc(100% / 12 * 6  - 30px); }
+    .l-7  { width: calc(100% / 12 * 7  - 30px); }
+    .l-8  { width: calc(100% / 12 * 8  - 30px); }
+    .l-9  { width: calc(100% / 12 * 9  - 30px); }
+    .l-10 { width: calc(100% / 12 * 10 - 30px); }
+    .l-11 { width: calc(100% / 12 * 11 - 30px); }
+    .l-12 { width: calc(100% / 12 * 12 - 30px); }
+}

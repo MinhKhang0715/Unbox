@@ -1,4 +1,33 @@
-.group {
+
+/* CONTAINER ////////////////////////////////////////////////////////////////*/
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    height: fit-content;
+}
+
+@media (max-width: 767px) {
+    .container {    
+        max-width: 100vw;
+    }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+    .container {
+        max-width: 720px;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+/*///////////////////////////////////////////////////////////////////////////*/
+
+/* ALIGNMENT ////////////////////////////////////////////////////////////////*/
+
+.align {
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
@@ -6,10 +35,32 @@
     align-content: flex-start;
 }
 
-.h-align-center { justify-content: center; }
-.h-align-right { justify-content: flex-end; }
-.v-align-center { align-items: center; }
-.v-align-bottom { align-items: flex-end; }
+.center {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.hcenter {
+    justify-content: center;
+}
+
+.vcenter {
+    align-items: center;
+    align-content: center;
+}
+
+.right {
+    justify-content: flex-end;
+}
+
+.bottom {
+    align-items: flex-end;
+}
+
+/*///////////////////////////////////////////////////////////////////////////*/
+
+/* ITEM /////////////////////////////////////////////////////////////////////*/
 
 .item {
     float: left;
@@ -68,3 +119,5 @@
     .l-11 { width: calc(100% / 12 * 11 - 30px); }
     .l-12 { width: calc(100% / 12 * 12 - 30px); }
 }
+
+/*///////////////////////////////////////////////////////////////////////////*/

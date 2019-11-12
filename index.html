@@ -11,8 +11,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <link rel="stylesheet" type="text/css" href="./public/css/base-reset.css">
-        <link rel="stylesheet" type="text/css" href="./public/css/layout-container.css">
-        <link rel="stylesheet" type="text/css" href="./public/css/layout-item.css">
+        <link rel="stylesheet" type="text/css" href="./public/css/layout-flex-system.css">
         <link rel="stylesheet" type="text/css" href="./public/css/layout-header.css">
         <link rel="stylesheet" type="text/css" href="./public/css/layout-main.css">
         <link rel="stylesheet" type="text/css" href="./public/css/layout-section.css">
@@ -25,50 +24,62 @@
         <header>
             <div class="color-bar"></div>
             <div class="logo-bar">
-                <div class="container">
-                    <div class="group v-align-center">
-                        <div class="item l-4 m-10 s-12">
-                            <a href="#">
-                                <img class="header-logo" src="./public/img/header_logo.svg" alt="Unbox logo">
-                            </a>
-                        </div>
-                        <div class="item l-4 m-hidden s-hidden">
-                            <form>
-                                <input type="text" placeholder="Search your sneaker">
-                                <button class="button-white"><i class="fa fa-search"></i></button>
-                            </form>
-                        </div>
+                <div class="container align vcenter">
+                    <div class="item l-4 m-10 s-12">
+                        <a href="#">
+                            <img class="header-logo" src="./public/img/header_logo.svg" alt="Unbox logo">
+                        </a>
+                    </div>
+                    <div class="item l-4 m-hidden s-hidden">
+                        <form>
+                            <input type="text" placeholder="Search your sneaker">
+                            <button class="button-white"><i class="fa fa-search"></i></button>
+                        </form>
                     </div>
                 </div>
             </div>
             <hr class="l-hidden">
             <nav class="m-hidden s-hidden">
-                <div class="container">
-                    <div class="group">
-                        <button class="button-black"><h3>NEW ARRIVALS</h3></button>
-                        <button class="button-black"><h3>BRANDS</h3></button>
-                        <button class="button-black"><h3>ACTIVITIES</h3></button>
-                        <button class="button-black"><h3>SERIES</h3></button>
-                        <button class="button-black"><h3>COLLECTIONS</h3></button>
-                    </div>
+                <div class="container align center">
+                    <button class="button-black">
+                        <h3>
+                            NEW ARRIVALS
+                        </h3>
+                    </button>
+                    <button class="button-black">
+                        <h3>
+                            BRANDS
+                        </h3>
+                    </button>
+                    <button class="button-black">
+                        <h3>
+                            ACTIVITIES
+                        </h3>
+                    </button>
+                    <button class="button-black">
+                        <h3>
+                            SERIES
+                        </h3>
+                    </button>
+                    <button class="button-black">
+                        <h3>
+                            COLLECTIONS
+                        </h3>
+                    </button>
                 </div>
             </nav>
         </header>
 
         <main>
             <section class="banner">
-                <div class="container">
-                    <div class="group v-align-center h-align-center">
-                        <div class="item">
-                            <span>CONVERSE PRIDE COLLECTION</span>
-                        </div>
+                <div class="container align center">
+                    <div class="item l-12 m-12 s-12 align center">
+                        <h3>CONVERSE PRIDE COLLECTION</h3>
                     </div>
-                    <div class="group v-align-center h-align-center">
-                        <div class="item">
-                            <button class="button-secondary">
-                                <h3>SHOP NOW</h3>
-                            </button>
-                        </div>
+                    <div class="item l-12 m-12 s-12 align center">                        
+                        <button class="button-secondary">
+                            <h3>SHOP NOW</h3>
+                        </button>
                     </div>
                 </div>
             </section>

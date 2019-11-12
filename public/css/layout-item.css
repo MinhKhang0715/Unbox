@@ -1,13 +1,15 @@
 .group {
-    width: 100%;
-    height: fit-content;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
 }
 
-.group:after {
-    display: table;
-    clear: both;
-    content: "";
-}
+.h-align-center { justify-content: center; }
+.h-align-right { justify-content: flex-end; }
+.v-align-center { align-items: center; }
+.v-align-bottom { align-items: flex-end; }
 
 .item {
     float: left;

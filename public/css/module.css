@@ -1,0 +1,98 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+input[type="text"] {
+    padding: 9px;
+    width: 80%;
+    height: 20px;
+    border: 1px solid black;
+}
+button {
+    padding: 9px 11px;
+    min-width: 20px;
+    min-height: 20px;
+}
+.button-secondary {
+    border: 0;
+    background-color: #640FAA;
+    color: white;
+}
+.button-black {
+    border: 0;
+    background-color: black;
+    color: white
+}
+.button-white {
+    border: 1px solid black;
+    background-color: white;
+}
+#Menu ul{
+    list-style-type: none;
+    background-color: black;
+    text-align: center;
+}
+#Menu ul li{
+    display: inline-table;
+    
+    line-height: 40px;
+    position: relative;
+}
+*, *:after, *:before {
+    box-sizing: content-box;
+    margin: 0px;
+}
+nav * {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav {
+    height: 40px;
+    background: black;
+}
+#showcase{
+    text-align: center;
+    text-transform: uppercase;
+    min-height: 550px;
+    background: url(../img/resource/PrideProduct_03_hd_1600.jpg) no-repeat ;
+    background-position: center;
+}
+#showcase h2{
+    color: white;
+    font-size: 40px;
+    text-shadow: 2px 2px 16px black;
+    margin-top: 230px;
+}
+#boxes{
+    margin-top: 50px;
+}
+#boxes .box{
+    float: left;
+    text-align: center;
+}
+#boxes .box img{
+    width: 100%;
+    height: auto;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+footer {
+    margin-top: 50px;
+    padding: 15px;
+    background: black;
+    color: white;
+}
+.footer-content{
+    text-align: left;
+    margin-bottom: 15px;
+}
+.footer-content img{
+    width: 40px;
+    height: auto;
+    padding-right: 30px;
+}

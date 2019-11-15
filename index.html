@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html>
     <head>
         <Title>Unbox Official</Title>
@@ -9,16 +9,9 @@
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-        <link rel="stylesheet" type="text/css" href="./public/css/base-reset.css">
-        <link rel="stylesheet" type="text/css" href="./public/css/layout-flex-system.css">
-        <link rel="stylesheet" type="text/css" href="./public/css/layout-header.css">
-        <link rel="stylesheet" type="text/css" href="./public/css/layout-main.css">
-        <link rel="stylesheet" type="text/css" href="./public/css/layout-section.css">
-
-        <link rel="stylesheet" type="text/css" href="./public/css/module-decor.css">
-        <link rel="stylesheet" type="text/css" href="./public/css/module-input.css">
-    </head>
+        <link rel="stylesheet" href="./css/module.css">
+        <link rel="stylesheet" href="./css/layout-flex-system.css">
+     </head>
     <body>
 
         <header>
@@ -27,7 +20,7 @@
                 <div class="container align vcenter">
                     <div class="item l-4 m-10 s-12">
                         <a href="#">
-                            <img class="header-logo" src="./public/img/header_logo.svg" alt="Unbox logo">
+                            <img class="header-logo" src="./img/header_logo.svg" alt="Unbox logo">
                         </a>
                     </div>
                     <div class="item l-4 m-hidden s-hidden">
@@ -40,53 +33,133 @@
             </div>
             <hr class="l-hidden">
             <nav class="m-hidden s-hidden">
-                <div class="container align center">
-                    <button class="button-black">
-                        <h3>
-                            NEW ARRIVALS
-                        </h3>
-                    </button>
-                    <button class="button-black">
-                        <h3>
-                            BRANDS
-                        </h3>
-                    </button>
-                    <button class="button-black">
-                        <h3>
-                            ACTIVITIES
-                        </h3>
-                    </button>
-                    <button class="button-black">
-                        <h3>
-                            SERIES
-                        </h3>
-                    </button>
-                    <button class="button-black">
-                        <h3>
-                            COLLECTIONS
-                        </h3>
-                    </button>
+                <div class="container align center" id="Menu">
+                    <ul>
+                        <li>
+                            <button class="button-black">
+                                <h3>NEW ARRIVALS</h3>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="button-black">
+                                <h3>BRANDS</h3>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="button-black">
+                                <h3>ACTIVITIES</h3>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="button-black">
+                                <h3>SERIES</h3>
+                            </button>
+                        </li>
+                        <li>
+                            <button class="button-black">
+                                <h3>COLLECTIONS</h3>
+                            </button>
+                        </li>
+                    </ul>
                 </div>
             </nav>
         </header>
 
         <main>
-            <section class="banner">
+            <section id="showcase">
                 <div class="container align center">
                     <div class="item l-12 m-12 s-12 align center">
-                        <h3>CONVERSE PRIDE COLLECTION</h3>
+                        <h2>CONVERSE PRIDE COLLECTION</h2>
                     </div>
                     <div class="item l-12 m-12 s-12 align center">                        
                         <button class="button-secondary">
-                            <h3>SHOP NOW</h3>
+                            <h4>SHOP NOW</h4>
                         </button>
+                    </div>
+                </div>
+            </section>
+            <section><div class="item l-12 m-12 s-12 align center" style="margin-top: 70px;"><h2>Featured sneaker</h2></div></section><br><br><br>
+            <section id="boxes">
+                <div class="container align center">
+                    <div class="item l-3 m-4 s-4 align center box">
+                        <div>
+                            <img src="./img/resource/nike air force.webp"> 
+                            <div><h4>Nike Air Force 1 Mid</h4></div>
+                            <div>1.790.000vnd</div>
+                        </div>
+                    </div>
+                    <div class="item l-3 m-4 s-4 align center box">
+                        <div>
+                            <img src="./img/resource/nike hyperdunkx.webp">
+                            <h4>Nike Hyperdunk X</h4>
+                            <div>3.058.000vnd</div>
+                        </div>
+                    </div>
+                    <div class="item l-3 m-4 s-4 align center box">
+                        <div>
+                            <img src="./img/resource/nike jordan defy sp.webp">
+                            <h4>Nike Jordan Defy SP</h4>
+                            <div>2.938.000vnd</div>
+                        </div>
+                    </div>
+                    <div class="item l-3 m-hidden s-hidden align center box">
+                        <div>
+                            <img src="./img/resource/nike jorden xxxiii se.webp">
+                            <h4>Nike Jordan XXXIII SE</h4>
+                            <div>4.698.000vnd</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="container align center">
+                    <div class="item l-12 m-12 s-12 align center" style="margin-top: 70px; margin-bottom: 25px;"><h2>Collections</h2></div>
+                </div>
+            </section>
+
+            <section>
+                <div class="container align center">
+                        <div class="item l-6 m-12 s-12 align center">
+                            <img src="./img/resource/PrideProduct_03_hd_1600 - Copy.jpg" width="100%" height="auto">
+                        </div>
+                    <div class="item l-6 m-12 s-12 align center">
+                        <img src="./img/resource/puma-nyc-collection().jpg" width="100%" height="auto">
                     </div>
                 </div>
             </section>
         </main>
 
         <footer>
-
+            <div class="container align center" style="margin-top: 30px;">
+                <div class="item l-4 m-12 s-12 align center">
+                    <h1>Chưa có hình</h1>
+                </div>
+                <div class="item l-4 m-6 s-6">
+                        <div class="footer-content"><h2>About</h2></div>
+                        <div class="footer-content">
+                            <h4>HQ Address</h4>
+                            <p>203 An Duong Vuong, the 5th Distric, Ho Chi Minh City, Viet Nam</p>
+                        </div>
+                        <div class="footer-content">
+                                <h4>Support</h4>
+                                <p>01234567890</p>
+                                <p>www.unbox.com@support</p>
+                        </div>
+                        <div class="footer-content">
+                                <h4>FAQ</h4>
+                                <p>www.unbox.com@fag</p>
+                        </div>
+                </div>
+                <div class="item l-4 m-6 s-6">
+                    <div class="footer-content"><h2>Follow us on social media</h2></div>
+                    <div class="footer-content" style="padding-bottom: 20px;">
+                        <img src="./img/icons/pinpng.com-facebook-icon-white-png-80756.png" alt="Facebook" width="32px" height="auto">
+                        <img src="./img/icons/pinpng.com-instagram-icon-png-transparent-1860109.png" width="32px" height="auto" alt="Instagram">
+                        <img src="./img/icons/pinpng.com-kappapride-png-65244.png" alt="Twitter" width="32px" height="auto">
+                    </div>
+                </div>
+            </div>
         </footer>
-
     </body>
+</html>
